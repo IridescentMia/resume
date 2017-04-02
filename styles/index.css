@@ -1,0 +1,280 @@
+body {
+    font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7em;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 2.66666667em;
+    /* 40/15 */
+}
+
+h1,
+strong,
+a {
+    color: rgb(102, 121, 223);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+dl {
+    margin: 0;
+}
+
+dl dt {
+    font-weight: bold;
+    font-size: 1.04em;
+}
+
+
+/* css for header */
+
+header {
+    display: flex;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+.contact li span {
+    width: 5.33333333em;
+    /* 80/15 */
+    text-align: right;
+    display: inline-block;
+}
+
+
+/* end header */
+
+
+/* css for content */
+
+.content {
+    display: flex;
+    margin-top: 1.33333333em;
+}
+
+.content > article > section {
+    padding: .5em 0;
+}
+
+h2 {
+    font-size: 1.33333333em;
+    /* 20/15 */
+    padding-bottom: .33333333em;
+    /* 5/15 */
+    border-bottom: 1px solid black;
+}
+
+
+/* end content */
+
+.circle {
+    width: .53333333em;
+    height: .53333333em;
+    /* 8/15 */
+    margin: 0 .66666667em;
+    /* 10/15 */
+    background: black;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+
+/* css for education */
+
+.edu-year {
+    width: 5.8em;
+    display: inline-block;
+}
+
+.edu-content {
+    display: inline-block;
+    margin-left: 6.7em;
+    /* (87+10+4-0.5)/15 */
+    padding-left: .9em;
+    /* 13.5/15 */
+    border-left: .06666667em solid black;
+    /* 1/15 */
+}
+
+.edu-title {
+    font-weight: bold;
+    margin-bottom: .2em;
+    /* 3/15 */
+    display: inline-block;
+}
+
+.edu-placeholder {
+    height: .625em;
+    border-left: 1px solid black;
+    margin-left: 6.7em;
+    /* (87+10+4-0.5)/15 */
+}
+
+
+/* end education */
+
+
+/* css for project */
+
+.project dl dt {
+    margin-bottom: .2em;
+}
+
+.project dl dd {
+    margin-left: .9em;
+    /* 13.5/15 */
+    padding-left: .9em;
+    border-left: .06666667em solid black;
+    /* 1px */
+}
+
+.project dl dd:first-child {
+    padding-top: .66666667em;
+    /* 10/15 */
+}
+.project dl dd:first-child span {
+    display: inline-block;
+    width: 6em;
+    background-color: rgb(233,236,251);
+    color: rgb(102, 121, 223);
+    font-size: .8em;
+    text-align: center;
+    margin-left: 1em;
+    line-height: 1.5em;
+    border-radius: .75em;
+}
+.project dl dd:last-child {
+    padding-bottom: .66666667em;
+}
+
+.key-point {
+    background: rgb(102, 121, 223);
+    color: white;
+    padding: .13333333em .33333333em;
+    /* 2px 5px */
+    margin: .33333333em 0 .6em;
+    /* 5/15 */
+    display: inline-block;
+    font-size: .875em;
+    /* 14/16 */
+}
+
+
+/* end project */
+
+.award-item:before,
+.skill-item dd:before,
+.other-item li:before,
+.eval-item li:before,
+.project dl dd li:before {
+    content: "";
+    background: url('../img/check.png') no-repeat;
+    background-size: .8em .8em;
+    /* 12/15 */
+    display: inline-block;
+    width: .8em;
+    height: .8em;
+    padding-right: .33333333em;
+    /* 5/15 */
+}
+
+
+/* css for skill */
+
+.skill-item dd {
+    margin-left: 0;
+}
+
+.skill-item dt {
+    margin: .33333333em 0;
+    /* 5/15 */
+}
+
+.skill-item {
+    margin-bottom: 1em;
+    /* 15/15 */
+}
+
+.skill-item:last-child {
+    margin-bottom: 0;
+}
+
+
+/* end skill */
+
+
+/* css for footer */
+
+footer {
+    text-align: center;
+    font-size: .8em;
+    margin: 3em 0 2em;
+}
+
+
+/* end footer */
+
+
+/* css for media */
+
+@media screen and (min-width: 900px) {
+    .container {
+        width: 900px;
+    }
+    header {
+        justify-content: space-between;
+    }
+    .title {
+        text-align: left;
+    }
+    .content > article {
+        width: 27em;
+    }
+    .content > article:first-child {
+        padding-right: 3em;
+    }
+    .content > article:last-child {
+        padding-left: 3em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 95%;
+    }
+    .content > article {
+        width: 100%;
+    }
+    header,
+    .content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .title {
+        text-align: center;
+    }
+    header {
+        align-items: center;
+    }
+    .content > article {
+        padding: 0;
+    }
+    address {
+        font-size: .94em;
+    }
+}
+
+
+/* end media */

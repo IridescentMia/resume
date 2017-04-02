@@ -133,13 +133,16 @@ h2 {
 }
 
 .project dl dd {
-    margin-left: .9em;
-    /* 13.5/15 */
+    margin-left: .26666666em;
+    /* 26666666.5/2 */
     padding-left: .9em;
+    /* 13.5/15 */
     border-left: .06666667em solid black;
     /* 1px */
 }
-
+.project .circle {
+    margin-left: 0em;
+}
 .project dl dd:first-child {
     padding-top: .66666667em;
     /* 10/15 */
